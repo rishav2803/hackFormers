@@ -15,7 +15,7 @@ export default function Tracks({ tracks }) {
             return (
               <div className="boxes">
                 <div className="svgHolder">
-                  <img className="svg" src="src\assets\sword.png" alt="" />
+                  <img className="svg" src={swordImg} alt="" />
                 </div>
                 <div className="topic">{track.title}</div>
                 <div className="tracks_content">{track.content}</div>
