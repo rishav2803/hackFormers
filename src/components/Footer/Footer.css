@@ -1,0 +1,19 @@
+.footer_container {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+}
+.logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_container a {
+  text-align: center;
+}
+
+#insta {
+  font-size: 2.4rem;
+}
