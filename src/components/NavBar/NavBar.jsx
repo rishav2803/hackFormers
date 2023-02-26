@@ -56,7 +56,7 @@ export default function NavBar({ links, logo }) {
                 </li>
               );
             }
-            if (link === "Prodigy") {
+            if (link === "Prototype") {
               return (
                 <li className="nav_list_items" key={link}>
                   <NavLink

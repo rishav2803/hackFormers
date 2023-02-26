@@ -21,12 +21,12 @@ export default function HackFormers() {
     "prizes",
     "faq",
     "Avalon",
-    "Prodigy",
+    "Prototype",
   ];
   return (
     <>
       <NavBar links={links} logo={HackLogo}></NavBar>
-      <Hero heroImg={heroLogo}></Hero>
+      <Hero heroImg={heroLogo} avalon={false} registerLink={"https://1ud6q75122n.typeform.com/to/SIKFXTyc"}></Hero>
       <About about={hackformersAbout}></About>
       <Tracks tracks={HackFormersTracks}></Tracks>
       {/* <Sponsors></Sponsors> */}

@@ -4,11 +4,11 @@ import avalonLogo from "../assets/Avalon.png";
 import avalonHero from "../assets/AvalonHero.png";
 
 export default function Avalon() {
-  const links = ["home", "Hackformers"];
+  const links = ["home", "Hackformers","Prototype"];
   return (
     <>
       <NavBar links={links} logo={avalonLogo}></NavBar>
-      <Hero heroImg={avalonHero}></Hero>
+      <Hero heroImg={avalonHero} avalon={true}></Hero>
     </>
   );
 }

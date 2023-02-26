@@ -1,7 +1,8 @@
 import Card from "../../ui/Card";
 import "./Hero.css";
 
-export default function Hero({ heroImg }) {
+export default function Hero({ heroImg,registerLink,avalon }) {
+  console.log(avalon);
   return (
     <Card>
       <div className="h_container" id="home">
@@ -9,7 +10,6 @@ export default function Hero({ heroImg }) {
           <img src={heroImg} alt="" />
           <div className="meta">
             <div className="date">
-              <i className="fa fa-caret-down"></i>
               17th March - 19th March 2023
             </div>
             {/* <img src="src\assets\Vector.png" alt="" /> */}
@@ -19,12 +19,11 @@ export default function Hero({ heroImg }) {
             </div> */}
             {/* <img src="src\assets\Vector.png" alt="" /> */}
             <div className="location">
-              <i className="fa fa-star"></i>
-              Terna College
+              <p>Terna College</p>
             </div>
           </div>
           <button className="glow-on-hover">
-            <a href="https://hackformers.devpost.com/" target="__blank">
+            <a href={registerLink} target="__blank">
               Register Now
             </a>
           </button>

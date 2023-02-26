@@ -24,7 +24,7 @@ export default function Prodigy() {
   return (
     <>
       <NavBar links={links} logo={prodigyLogo}></NavBar>
-      <Hero heroImg={prodigyLogo}></Hero>
+      <Hero heroImg={prodigyLogo} avalon={false} registerLink={"https://1ud6q75122n.typeform.com/to/kSJSRKE9"}></Hero>
       <About about={ProdigyAbout}></About>
       <Tracks tracks={ProdigyTracks}></Tracks>
       {/* <Sponsors></Sponsors> */}
