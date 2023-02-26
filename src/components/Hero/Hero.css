@@ -109,6 +109,20 @@
   margin-left: 1rem;
 }
 
+.avalon_links {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.avalon_link {
+  text-decoration: none;
+}
+.avalon_link i {
+  color: white;
+  margin-left: 1rem;
+  font-size: 2.3rem;
+}
+
 @media only screen and (max-width: 840px) {
   .hero_container img {
     width: 100%;

@@ -1,4 +1,4 @@
-import Hero from "../components/Hero/Hero";
+import AvalonHero from "../components/Hero/AvalonHero";
 import NavBar from "../components/NavBar/NavBar";
 import avalonLogo from "../assets/Avalon.png";
 import avalonHero from "../assets/AvalonHero.png";
@@ -8,7 +8,7 @@ export default function Avalon() {
   return (
     <>
       <NavBar links={links} logo={avalonLogo}></NavBar>
-      <Hero heroImg={avalonHero} avalon={true}></Hero>
+      <AvalonHero heroImg={avalonHero} avalon={true}></AvalonHero>
     </>
   );
 }

@@ -1,7 +1,10 @@
 import Card from "../../ui/Card";
 import "./Hero.css";
+import discordimg from "../../assets/discord.png"
+import linkedinimg from "../../assets/linkedin.png"
+import instagramimg from "../../assets/insta.png"
 
-export default function Hero({ heroImg,registerLink}) {
+export default function AvalonHero({ heroImg }) {
   return (
     <Card>
       <div className="h_container" id="home">
@@ -21,11 +24,6 @@ export default function Hero({ heroImg,registerLink}) {
               <p>Terna College</p>
             </div>
           </div>
-          <button className="glow-on-hover">
-            <a href={registerLink} target="__blank">
-              Register Now
-            </a>
-          </button>
         </div>
       </div>
     </Card>
