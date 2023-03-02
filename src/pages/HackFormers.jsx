@@ -26,7 +26,7 @@ export default function HackFormers() {
   return (
     <>
       <NavBar links={links} logo={HackLogo}></NavBar>
-      <Hero heroImg={heroLogo}  registerLink={"https://1ud6q75122n.typeform.com/to/SIKFXTyc"}></Hero>
+      <Hero heroImg={heroLogo}  registerLink={"https://hackformers.devfolio.co/"}></Hero>
       <About about={hackformersAbout}></About>
       <Tracks tracks={HackFormersTracks}></Tracks>
       {/* <Sponsors></Sponsors> */}
