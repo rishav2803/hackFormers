@@ -24,13 +24,17 @@ export default function Prodigy() {
   return (
     <>
       <NavBar links={links} logo={prodigyLogo}></NavBar>
-      <Hero heroImg={prodigyLogo} registerLink={"https://1ud6q75122n.typeform.com/to/kSJSRKE9"}></Hero>
+      <Hero
+        heroImg={prodigyLogo}
+        registerLink={"https://1ud6q75122n.typeform.com/to/kSJSRKE9"}
+        schedule={"17th March"}
+      ></Hero>
       <About about={ProdigyAbout}></About>
       <Tracks tracks={ProdigyTracks}></Tracks>
       {/* <Sponsors></Sponsors> */}
       <Prizes></Prizes>
       <Faq></Faq>
-      <Footer></Footer>
+      <Footer links={links}></Footer>
     </>
   );
 }

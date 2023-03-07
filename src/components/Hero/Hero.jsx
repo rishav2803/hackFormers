@@ -1,16 +1,14 @@
 import Card from "../../ui/Card";
 import "./Hero.css";
 
-export default function Hero({ heroImg,registerLink}) {
+export default function Hero({ heroImg, registerLink, schedule }) {
   return (
     <Card>
       <div className="h_container" id="home">
         <div className="hero_container">
           <img src={heroImg} alt="" />
           <div className="meta">
-            <div className="date">
-              17th March - 19th March 2023
-            </div>
+            <div className="date">{schedule}</div>
             {/* <img src="src\assets\Vector.png" alt="" /> */}
             {/* <div className="time">
               <i className="fa fa-star"></i>

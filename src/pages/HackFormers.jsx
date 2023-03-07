@@ -26,14 +26,18 @@ export default function HackFormers() {
   return (
     <>
       <NavBar links={links} logo={HackLogo}></NavBar>
-      <Hero heroImg={heroLogo}  registerLink={"https://hackformers.devfolio.co/"}></Hero>
+      <Hero
+        heroImg={heroLogo}
+        registerLink={"https://hackformers.devfolio.co/"}
+        schedule={"17th March - 19th March 2023"}
+      ></Hero>
       <About about={hackformersAbout}></About>
       <Tracks tracks={HackFormersTracks}></Tracks>
       {/* <Sponsors></Sponsors> */}
       <Schedule></Schedule>
       <Prizes></Prizes>
       <Faq></Faq>
-      <Footer></Footer>
+      <Footer links={links}></Footer>
     </>
   );
 }
