@@ -9,32 +9,32 @@ export default function AvalonHero({ heroImg }) {
   const minref=useRef();
   const secref=useRef();
 
-  let interval;
 
   const countdown=()=>{
-    const countDate=new Date("March 17,2023 00:00:00").getTime();
-    interval=setInterval(()=>{
+    const countDate=new Date("March 18,2023 12:30:00").getTime();
+
+    const interval=setInterval(()=>{
     const now = new Date().getTime();
     const gap= countDate - now;
+
+    //clear the interval once the countdown is reached and return so rest statement is not executed
+    if (gap < 0) {
+      clearInterval(interval);
+      return;
+    }
+
     const sec=1000;
     const min = sec * 60;  
     const hour = min * 60 ;
     const day = hour * 24;
-
     const textDay= Math.floor(gap/day).toString();
     const textHour= Math.floor((gap % day)/hour).toString();
     const textMin= Math.floor((gap % hour)/min).toString();
     const textSec= Math.floor((gap % min)/sec).toString();
-
-    if (gap < 0) {
-      clearInterval(interval);
-    }
-      
     dayref.current.innerText=textDay.length==1?"0"+textDay:textDay;
     hourref.current.innerText=textHour.length==1?"0"+textHour:textHour;
     minref.current.innerText=textMin.length==1?"0"+textMin:textMin;
     secref.current.innerText=textSec.length==1?"0"+textSec:textSec;
-
     },1000)
   }
 
@@ -65,7 +65,6 @@ export default function AvalonHero({ heroImg }) {
               <h3 className="sec" ref={secref}>56</h3>
               <h3>Second</h3>
             </div>
-          
           </div>
           <div className="mssg">Time till Hackathon</div>
         </div>
